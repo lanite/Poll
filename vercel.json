@@ -1,0 +1,16 @@
+{
+  "headers": [
+    {
+      "source": "/api/og/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "s-maxage=60, stale-while-revalidate=300" }
+      ]
+    },
+    {
+      "source": "/poll/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "s-maxage=5, stale-while-revalidate=30" }
+      ]
+    }
+  ]
+}
